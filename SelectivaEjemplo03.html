@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let cantidad = Number(prompt("Ingrese la cantidad de autos vendidos: "))
+        let pago = 500 + 15 * cantidad
+        alert(pago)
+
+        if(cantidad > 15)
+            pago = pago + 40
+
+        alert(pago)
+        let impuesto = pago * 0.05
+        pago = pago - impuesto
+
+        alert("El total a pagar es: $ " + pago)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

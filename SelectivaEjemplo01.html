@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let precio = Number(prompt("Ingrese el precio: $ "));
+        if(precio < 0){
+            alert("Ingreso el precio incorrecto")
+        }else{
+            if(precio <= 20){
+                total = 0
+            }
+            else{
+                if(precio <= 40){
+                    total = precio * 0.3
+                }
+                else{
+                    if(precio <= 500){
+                        total = precio * 0.4
+                    }
+                    else{
+                        total = precio * 0.5
+                    }
+                }
+            }
+            alert("Impuesto: $"+total)
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
